@@ -46,6 +46,7 @@ const Home = () => {
         </div>
 		<div className="prompt-container">
           <textarea placeholder="Type name of person here" className="prompt-box" value={userInput} onChange={onUserChangedText}/>
+		  <p>Like this tool? Download the <a href="https://github.com/vmathur87/gpt3-writer-extension-starter">extension</a></p>
         </div>
 		<div className="prompt-buttons">
 		  <a className={isGenerating ? 'generate-button loading' : 'generate-button'} onClick={callGenerateEndpoint}>
@@ -79,6 +80,9 @@ const Home = () => {
           </div>
         </a>
       </div>
+	  <div className="extension-link">
+			
+	  </div>
     </div>
   );
 };
